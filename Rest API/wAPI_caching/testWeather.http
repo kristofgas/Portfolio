@@ -1,0 +1,8 @@
+
+GET http://localhost:3000/weather/cities/2618425 HTTP/1.1
+
+
+
+//GET http://localhost:3000/weather/summary?unit=celsius&temperature=24&cities=2618425,3621849,3133880 HTTP/1.1
+###
+

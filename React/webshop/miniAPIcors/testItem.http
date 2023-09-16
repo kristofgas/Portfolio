@@ -1,0 +1,53 @@
+
+// get all items
+GET http://localhost:3000/items HTTP/1.1
+###
+
+// get item by id
+GET http://localhost:3000/items/15 HTTP/1.1
+###
+
+//get all categories
+GET http://localhost:3000/categories/ HTTP/1.1
+###
+
+//get items from category category by categoryId
+GET http://localhost:3000/categories/1 HTTP/1.1
+###
+
+
+
+
+
+
+
+
+
+
+
+
+//NOT IN FUNCTIONAL REQUIREMENTS? :
+
+// create item
+POST http://localhost:3000/items HTTP/1.1
+content-type: application/json
+
+{"itemId":15, "itemName": "First item", "itemDescription": "First item Description","itemPrice": 600, "itemQuantity": 1, "itemCategory": 1, "itemIMG": "/firstitem.img", "itemOnSale": "no"}
+###
+// create item
+POST http://localhost:3000/items HTTP/1.1
+content-type: application/json
+
+{"itemId":16, "itemName": "Second item", "itemDescription": "Second item Description","itemPrice": 600, "itemQuantity": 1, "itemCategory": 2, "itemIMG": "/seconditem.img", "itemOnSale": "no"}
+###
+
+// update item
+PUT  http://localhost:3000/items/15 HTTP/1.1
+content-type: application/json
+
+{"itemId":15, "itemName": "First item", "itemDescription": "First item Description","itemPrice": 300, "itemQuantity": 4, "itemCategory": "Male", "itemIMG": "/firstitem.img", "itemOnSale": "yes"}
+###
+
+// delete item
+DELETE  http://localhost:3000/customers/15 HTTP/1.1
+###

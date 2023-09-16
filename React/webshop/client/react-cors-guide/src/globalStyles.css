@@ -1,0 +1,83 @@
+/* .main-container {
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    
+  }
+  .cards-container{  
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 20px;
+  } */
+
+.main-container {
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+	position: relative;
+	display: flex;
+}
+.cards-container {
+	justify-content: space-around;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding-top: 20px;
+}
+
+.swal-overlay {
+	background-color: rgba(243, 196, 10, 0.955);
+	margin: 0px;
+	font-size: 16px;
+	margin-bottom: 28px;
+}
+
+.swal-title {
+	font-size: 24px;
+}
+.swal-text {
+	justify-content: center;
+}
+
+.swal-button {
+	padding: 7px 19px;
+	border-radius: 2px;
+	background-color: #313232;
+	font-size: 12px;
+
+	text-shadow: 0px -1px 0px rgba(54, 52, 52, 0.3);
+}
+
+.purchaseBtn {
+	border-radius: 8px;
+}
+
+.removeBtn {
+	border-radius: 5px;
+}
+
+.addBtn {
+	border-radius: 5px;
+}
+
+.container_form {
+	width: 40%;
+	padding: 70px;
+}
+.signup_form {
+	width: 100%;
+	color: white;
+	background: #2e2f2f;
+	padding: 1.5em;
+	border-radius: 1em;
+}

@@ -1,0 +1,11 @@
+.container_form{
+    width: 40%;
+    padding: 70px;
+}
+.signup_form {
+    width: 100%;
+    color: white;
+    background: #2e2f2f;
+    padding: 1.5em;
+    border-radius: 1em;
+}

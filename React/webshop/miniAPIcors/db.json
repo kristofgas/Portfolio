@@ -1,0 +1,313 @@
+{
+  "customers": [
+    {
+      "customerId": 15,
+      "customerFistName": "John",
+      "customerLastName": "Johnson",
+      "customerBasket": [
+        {
+          "itemId": 11,
+          "itemQuantity": 3
+        },
+        {
+          "itemId": 14,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 17,
+          "itemQuantity": 20
+        },
+        {
+          "itemId": 1,
+          "itemQuantity": 1
+        }
+      ]
+    },
+    {
+      "customerId": 16,
+      "customerFistName": "John",
+      "customerLastName": "Johnson",
+      "customerBasket": []
+    },
+    {
+      "customerId": 7868,
+      "customerFistName": "Jone",
+      "customerLastName": "Jar",
+      "customerEmail": "Jar@xyz.com",
+      "customerBasket": []
+    },
+    {
+      "customerId": 462108078528,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 13,
+          "itemQuantity": 14
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "itemId": 11,
+      "itemName": "Liam",
+      "itemDescription": "Head into the future with confidence. Not to mention style. Inspired by running silhouettes from the '80s archive, NMD was born in 2015 to merge sleek style with modern technologies and comfort. These Liam shoes keep your feet cushioned with a responsive BOOST midsole. Chic transparent overlays add a cyberpunk vibe. The future is yours. Go and get it. ",
+      "itemPrice": 148,
+      "itemCategory": 1,
+      "itemColor": "White/Black",
+      "itemIMG1": "https://i.ibb.co/nfWMk38/1-1-man.jpg",
+      "itemIMG2": "https://i.ibb.co/tsgnrd5/1-2-man.jpg",
+      "itemIMG3": "https://i.ibb.co/DpLSGTR/1-3-man.jpg",
+      "itemIMG4": "https://i.ibb.co/NjL3m8P/1-4-man.jpg",
+      "itemOnSale": ""
+    },
+    {
+      "itemId": 12,
+      "itemName": "Allan",
+      "itemDescription": "The '80s were a high point of basketball style, and the Forum quickly became legend, first on the hardwood and then on the streets.      These juniors' shoes come fully equipped with a leather upper, chunky outsole and ankle strap. Tap into the decade's energy every time you lace them up.",
+      "itemPrice": 108,
+      "itemCategory": 1,
+      "itemColor": "White/Blue",
+      "itemIMG1": "https://i.ibb.co/2W38PZJ/2-1-man.jpg",
+      "itemIMG2": "https://i.ibb.co/C60sbtq/2-2-man.jpg",
+      "itemIMG3": "https://i.ibb.co/9961tgY/2-3-man.jpg",
+      "itemIMG4": "https://i.ibb.co/JdRyTHC/2-4-man.jpg",
+      "itemOnSale": ""
+    },
+    {
+      "itemId": 13,
+      "itemName": "Oliver",
+      "itemDescription": "Originally made for basketball courts in the '70s. Celebrated by hip hop royalty in the '80s.       The Oliver shoe is now a lifestyle staple for streetwear enthusiasts.       The world-famous shell toe feature remains, providing style and protection.",
+      "itemPrice": 108,
+      "itemCategory": 1,
+      "itemColor": "White/Black",
+      "itemIMG1": "https://i.ibb.co/M827nRv/3-1-man.jpg",
+      "itemIMG2": "https://i.ibb.co/rwgTsz2/3-2-man.jpg",
+      "itemIMG3": "https://i.ibb.co/Cw9b8yj/3-3-man.jpg",
+      "itemIMG4": "https://i.ibb.co/mSqHjWX/3-4-man.jpg",
+      "itemOnSale": ""
+    },
+    {
+      "itemId": 14,
+      "itemName": "Elijah",
+      "itemDescription": "Whether you're building consistency, upping your distance or training for a personal best,       Solarglide 5 are the shoes you leave by the door to support your goals every single day. They're packed with performance technology,       from the midsole to the knit upper. This shoe's upper is made with a high-performance yarn which contains at least 50% Parley Ocean Plastic — reimagined plastic waste,       intercepted on remote islands, beaches, coastal communities and shorelines, preventing it from polluting our ocean.    ",
+      "itemPrice": 148,
+      "itemCategory": 1,
+      "itemColor": "Orange/Black",
+      "itemIMG1": "https://i.ibb.co/fXGYPXW/4-1-man.jpg",
+      "itemIMG2": "https://i.ibb.co/m6t7bm7/4-2-man.jpg",
+      "itemIMG3": "https://i.ibb.co/7KwLMFb/4-3-man.jpg",
+      "itemIMG4": "https://i.ibb.co/pJFMXhx/4-4-man.jpg",
+      "itemOnSale": ""
+    },
+    {
+      "itemId": 15,
+      "itemName": "William",
+      "itemDescription": " Take your performance to the next level in these hip shoes. They're made with a BOOST midsole for energy return and enhanced comfort. The wrap design locks in and supports your feet. The shoe offers optimal fit and balance, and the SPIKEMORE traction outsole provides solid grip.   ",
+      "itemPrice": 208,
+      "itemCategory": 1,
+      "itemColor": "White/Blue/Orange",
+      "itemIMG1": "https://i.ibb.co/4T9G9q6/5-1-man.jpg",
+      "itemIMG2": "https://i.ibb.co/nkLhcPX/5-2-man.jpg",
+      "itemIMG3": "https://i.ibb.co/FmjQLRC/5-3-man.jpg",
+      "itemIMG4": "https://i.ibb.co/Vpq15sB/5-4-man.jpg",
+      "itemOnSale": "SALE"
+    },
+    {
+      "itemId": 16,
+      "itemName": "James",
+      "itemDescription": "With influences as wide-ranging as skateboarding, the club scene and mid-century design, James has been a pioneer of Los Angeles streetwear culture since 1991. Celebrating its 30th anniversary, the brand put its distinctive stamp on this pair of the Campus 80s shoes. The suede upper and low-profile silhouette made legendary by decades of B-ballers, rappers and skaters remains as iconic as ever.    ",
+      "itemPrice": 108,
+      "itemCategory": 1,
+      "itemColor": "Yellow/Orange",
+      "itemIMG1": "https://i.ibb.co/s6NDgd4/6-1-man.jpg",
+      "itemIMG2": "https://i.ibb.co/KDVbZXH/6-2-man.jpg",
+      "itemIMG3": "https://i.ibb.co/sjCKfwq/6-3-man.jpg",
+      "itemIMG4": "https://i.ibb.co/tmf3XTx/6-4-man.jpg",
+      "itemOnSale": "SALE"
+    },
+    {
+      "itemId": 17,
+      "itemName": "Benjamin",
+      "itemDescription": "Running can be as much about comfort as it is about style. These running-inspired shoes have a sculpted Cloudfoam midsole that provides pillow-soft comfort. A knit upper and a bold logo complete the look.",
+      "itemPrice": 94,
+      "itemCategory": 1,
+      "itemColor": "Grey/Black",
+      "itemIMG1": "https://i.ibb.co/ZKbgCkg/7-1-man.jpg",
+      "itemIMG2": "https://i.ibb.co/44npYmc/7-2-man.jpg",
+      "itemIMG3": "https://i.ibb.co/x2bMjFv/7-3-man.jpg",
+      "itemIMG4": "https://i.ibb.co/Wywkzq1/7-4-man.jpg",
+      "itemOnSale": ""
+    },
+    {
+      "itemId": 18,
+      "itemName": "Lucas",
+      "itemDescription": "Bringing back an archive edition of the celebrated Lucas, the sneakers show off the same textures and materials as the 1991 version. Made in suede, they feature contrast details that echo the early '90s style.",
+      "itemPrice": 100,
+      "itemCategory": 1,
+      "itemColor": "Red/White",
+      "itemIMG1": "https://i.ibb.co/rfxRK2W/8-1-man.jpg",
+      "itemIMG2": "https://i.ibb.co/0YzJwrf/8-2-man.jpg",
+      "itemIMG3": "https://i.ibb.co/SynbBy2/8-3-man.jpg",
+      "itemIMG4": "https://i.ibb.co/k22c5zr/8-4-man.jpg",
+      "itemOnSale": "SALE"
+    },
+    {
+      "itemId": 19,
+      "itemName": "Henry",
+      "itemDescription": "The perfect platform for hard court domination. These Henry Shoes have an intuitive lacing system that locks you in by pulling down the neoprene tongue to match your foot shape. In the heel, a Geofit system fills every gap so you feel at one with your footwear. Underneath, a cushioned Bounce midsole and TPU midfoot shank add comfort and stability. Oh, and that bold wordmark on the medial side isn't just for show; it's made from tough RPU for added abrasion resistance.",
+      "itemPrice": 161,
+      "itemCategory": 1,
+      "itemColor": "Red/White/Black",
+      "itemIMG1": "https://i.ibb.co/3YrG2Vq/9-1-man.jpg",
+      "itemIMG2": "https://i.ibb.co/C1bGCtR/9-2-man.jpg",
+      "itemIMG3": "https://i.ibb.co/Hn8X577/9-3-man.jpg",
+      "itemIMG4": "https://i.ibb.co/TbhThqw/9-4-man.jpg",
+      "itemOnSale": ""
+    },
+    {
+      "itemId": 20,
+      "itemName": "Alexander",
+      "itemDescription": "You don't mess around when it comes to style. Your look is classic yet bold, and that's just how you like it. Running-inspired but made for everyday wear, these Alexander Shoes have a premium material-mix design that's easy to dress up or down. So go ahead, pair them with your favourite jeans or your favourite sweats. Either way, Boost cushioning adds comfort to every step.",
+      "itemPrice": 134,
+      "itemCategory": 1,
+      "itemColor": "White/Blue/Yellow",
+      "itemIMG1": "https://i.ibb.co/j6XXGYF/10-1-man.jpg",
+      "itemIMG2": "https://i.ibb.co/6XWFHjt/10-2-man.jpg",
+      "itemIMG3": "https://i.ibb.co/89ZMCLy/10-3-man.jpg",
+      "itemIMG4": "https://i.ibb.co/rFf9g3S/10-4-man.jpg",
+      "itemOnSale": "SALE"
+    },
+    {
+      "itemId": 21,
+      "itemName": "Olivia",
+      "itemDescription": "Futuristic sneakers as comfortable as they are stylish. Push the boundaries of throwback style. These Olivia shoes mutate '90s DNA into something entirely new. Show off the high-volume, sculpted shape of this pair with shorts or cropped pants. Extra cushioning keeps you comfortable from dawn to dusk (or beyond).",
+      "itemPrice": 134,
+      "itemCategory": 2,
+      "itemColor": "White/Beige",
+      "itemIMG1": "https://i.ibb.co/WV0WRp4/1-1-woman.jpg",
+      "itemIMG2": "https://i.ibb.co/8xvYZ22/1-2-woman.jpg",
+      "itemIMG3": "https://i.ibb.co/FKrtzzw/1-3-woman.jpg",
+      "itemIMG4": "https://i.ibb.co/dpLvLkX/1-4-woman.jpg",
+      "itemOnSale": ""
+    },
+    {
+      "itemId": 22,
+      "itemName": "Layla",
+      "itemDescription": "Sleek, futuristic shoes made for everyday comfort. Ready for the future? You are in these Layla shoes. Bringing the best of modern technology into the ever-evolving ZX franchise, they charge up your stride and let your style shine. BOOST cushioning takes care of the comfort side of things. Translucent and reflective details keep your feet fresh.",
+      "itemPrice": 175,
+      "itemCategory": 2,
+      "itemColor": "Green/Black",
+      "itemIMG1": "https://i.ibb.co/mRtg9Pp/2-1-woman.jpg",
+      "itemIMG2": "https://i.ibb.co/fSKF1QN/2-2-woman.jpg",
+      "itemIMG3": "https://i.ibb.co/MNPkmnf/2-3-woman.jpg",
+      "itemIMG4": "https://i.ibb.co/qNyrwLq/2-4-woman.jpg",
+      "itemOnSale": ""
+    },
+    {
+      "itemId": 23,
+      "itemName": "Ava",
+      "itemDescription": "Bright and lightweight shoes with a paint-drip graphic. Lightweight and stylish. That's what the Ava shoes are all about. A beautiful creamsicle orange leather upper stands out right away. Wear them with dark-colored jeans or pair the eye-catching paint-drip graphic with a no-sock look. Keep that pep in your step with a plush memory foam sockliner that keeps you comfortable all day long.",
+      "itemPrice": 120,
+      "itemCategory": 2,
+      "itemColor": "Orange/Black",
+      "itemIMG1": "https://i.ibb.co/LgGS5rY/3-1-woman.jpg",
+      "itemIMG2": "https://i.ibb.co/DLsNCd1/3-2-woman.jpg",
+      "itemIMG3": "https://i.ibb.co/yWfqXjV/3-3-woman.jpg",
+      "itemIMG4": "https://i.ibb.co/5X0MvVN/3-4-woman.jpg",
+      "itemOnSale": "SALE"
+    },
+    {
+      "itemId": 24,
+      "itemName": "Charlotte",
+      "itemDescription": "Made for the mountain trails. The Charlotte shoe has been created in close collaboration with one of the world's fastest ultra trail runners. It is one of the first trail running shoes to feature a bio-based thermoplastic elastomer (TPE) plate that's made out of 90% renewable carbon.​",
+      "itemPrice": 175,
+      "itemCategory": 2,
+      "itemColor": "Rose/Orange",
+      "itemIMG1": "https://i.ibb.co/yNRL8n6/4-1-woman.jpg",
+      "itemIMG2": "https://i.ibb.co/Dk5Vr4H/4-2-woman.jpg",
+      "itemIMG3": "https://i.ibb.co/bWsSBNb/4-3-woman.jpg",
+      "itemIMG4": "https://i.ibb.co/mTSkpNZ/4-4-woman.jpg",
+      "itemOnSale": "SALE"
+    },
+    {
+      "itemId": 25,
+      "itemName": "Sophia",
+      "itemDescription": "Get after the day in total comfort in these ultra-cushioned shoes. Sophia expands the ZX universe with a glow. Step into the shoes to experience the cushioned comfort of the wrapped Boost midsole. Embrace the glow of the upper's bold luminous design. Eyes may widen. Embrace all sensations.",
+      "itemPrice": 148,
+      "itemCategory": 2,
+      "itemColor": "White/Yellow",
+      "itemIMG1": "https://i.ibb.co/2qBMcQR/5-1-woman.jpg",
+      "itemIMG2": "https://i.ibb.co/gw4vYDK/5-2-woman.jpg",
+      "itemIMG3": "https://i.ibb.co/3hGYPP6/5-3-woman.jpg",
+      "itemIMG4": "https://i.ibb.co/Fw2RVmj/5-4-woman.jpg",
+      "itemOnSale": ""
+    },
+    {
+      "itemId": 26,
+      "itemName": "Amelia",
+      "itemDescription": "Bold shoes inspired by hoops heritage and '80s voguing. Crosswalk or catwalk? Both. Strangers or backup dancers? Also both. Own your swagger and make the city your backdrop in these Amelia shoes. Inspired by the attitude of the '80s, they elevate your daily look with a bold platform and a stylish upper that nods to the birthplace of voguing. Go ahead. Strike a pose.",
+      "itemPrice": 120,
+      "itemCategory": 2,
+      "itemColor": "White/Silver",
+      "itemIMG1": "https://i.ibb.co/p44D96N/6-1-woman.jpg",
+      "itemIMG2": "https://i.ibb.co/0V8BHCm/6-2-woman.jpg",
+      "itemIMG3": "https://i.ibb.co/rdR62vc/6-3-woman.jpg",
+      "itemIMG4": "https://i.ibb.co/fxQ75q5/6-4-woman.jpg",
+      "itemOnSale": ""
+    },
+    {
+      "itemId": 27,
+      "itemName": "Isabella",
+      "itemDescription": "Solarglide 5, an everyday all-rounder with superb energy return. Whether you're building consistency, upping your distance or training for a personal best, Isabella are the shoes you leave by the door to support your goals every single day. They're packed with performance technology. This shoe's upper is made with a high-performance yarn which contains at least 50% Parley Ocean Plastic — reimagined plastic waste, intercepted on remote islands, beaches, coastal communities and shorelines, preventing it from polluting our ocean.",
+      "itemPrice": 148,
+      "itemCategory": 2,
+      "itemColor": "White/Rose",
+      "itemIMG1": "https://i.ibb.co/gJHzgNp/7-1-woman.jpg",
+      "itemIMG2": "https://i.ibb.co/VV1gs1x/7-2-woman.jpg",
+      "itemIMG3": "https://i.ibb.co/Gvsk4z1/7-3-woman.jpg",
+      "itemIMG4": "https://i.ibb.co/XJJYxQH/7-4-woman.jpg",
+      "itemOnSale": ""
+    },
+    {
+      "itemId": 28,
+      "itemName": "Mia",
+      "itemDescription": "Running-inspired shoes for everyday comfort. These shoes bring the athletic style of running footwear to your everyday look. Move confidently through your day in a comfortably snug fit and a lightweight midsole that provides all-day cushioning underfoot. This product is made with Primegreen, a series of high-performance recycled materials. 50% of upper is recycled content. No virgin polyester.",
+      "itemPrice": 74,
+      "itemCategory": 2,
+      "itemColor": "Black",
+      "itemIMG1": "https://i.ibb.co/Z6H5MCL/8-1-woman.jpg",
+      "itemIMG2": "https://i.ibb.co/Hp5tdNV/8-2-woman.jpg",
+      "itemIMG3": "https://i.ibb.co/Q64hqGW/8-3-woman.jpg",
+      "itemIMG4": "https://i.ibb.co/RHPR1Hk/8-4-woman.jpg",
+      "itemOnSale": ""
+    },
+    {
+      "itemId": 29,
+      "itemName": "Evelyn",
+      "itemDescription": "Running shoes made in part with recycled materials. Every day is a good day for a run when you lace up in these shoes. A padded collar gives you a snug and secure fit, while lightweight cushioning underfoot delivers enhanced flexibility for a comfortable step from heel-strike to toe-off. Made with a series of recycled materials, this upper features at least 50% recycled content. This product represents just one of our solutions to help end plastic waste.",
+      "itemPrice": 94,
+      "itemCategory": 2,
+      "itemColor": "White/Pink",
+      "itemIMG1": "https://i.ibb.co/GvxG333/9-1-woman.jpg",
+      "itemIMG2": "https://i.ibb.co/z7z9B88/9-2-woman.jpg",
+      "itemIMG3": "https://i.ibb.co/H4QdZMc/9-3-woman.jpg",
+      "itemIMG4": "https://i.ibb.co/8dm2cvF/9-4-woman.jpg",
+      "itemOnSale": ""
+    },
+    {
+      "itemId": 30,
+      "itemName": "Harper",
+      "itemDescription": "Comfy boost trainers for the holiday season. Tis the season for carolling, eggnog and good cheer. But you don't have to go formal in order to celebrate. Just lace up in these Harper Shoes and bring holiday joy to any outfit. Reimagining the iconic running-inspired silhouette for the season, the snug-fitting textile upper shows off a festive knit sweater design. Snowflake details add wintery vibes (but without the chill).",
+      "itemPrice": 148,
+      "itemCategory": 2,
+      "itemColor": "White/Red",
+      "itemIMG1": "https://i.ibb.co/gv64xkF/10-1-woman.jpg",
+      "itemIMG2": "https://i.ibb.co/zbQz7Rk/10-2-woman.jpg",
+      "itemIMG3": "https://i.ibb.co/c2wrjtz/10-3-woman.jpg",
+      "itemIMG4": "https://i.ibb.co/jGb31PD/1-O-4-woman.jpg",
+      "itemOnSale": "SALE"
+    }
+  ]
+}
