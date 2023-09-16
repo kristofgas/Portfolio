@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="elementary matrix multiplication" tests="11" skipped="0" failures="0" errors="0" timestamp="2021-12-13T13:37:59" hostname="Kristofs-MacBook-Pro-2.local" time="0.079">
+  <properties/>
+  <testcase name="should be associative" classname="matrix_multiplication.MatrixTest$elementary_matrix_multiplication" time="0.021"/>
+  <testcase name="should be associative ejml" classname="matrix_multiplication.MatrixTest$elementary_matrix_multiplication" time="0.012"/>
+  <testcase name="[1] 2" classname="matrix_multiplication.MatrixTest$elementary_matrix_multiplication" time="0.001"/>
+  <testcase name="[2] 4" classname="matrix_multiplication.MatrixTest$elementary_matrix_multiplication" time="0.001"/>
+  <testcase name="[3] 8" classname="matrix_multiplication.MatrixTest$elementary_matrix_multiplication" time="0.0"/>
+  <testcase name="[4] 16" classname="matrix_multiplication.MatrixTest$elementary_matrix_multiplication" time="0.0"/>
+  <testcase name="[5] 32" classname="matrix_multiplication.MatrixTest$elementary_matrix_multiplication" time="0.0"/>
+  <testcase name="[6] 64" classname="matrix_multiplication.MatrixTest$elementary_matrix_multiplication" time="0.001"/>
+  <testcase name="[7] 128" classname="matrix_multiplication.MatrixTest$elementary_matrix_multiplication" time="0.005"/>
+  <testcase name="[8] 256" classname="matrix_multiplication.MatrixTest$elementary_matrix_multiplication" time="0.026"/>
+  <testcase name="should NOT be commutative" classname="matrix_multiplication.MatrixTest$elementary_matrix_multiplication" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,12 @@
+\begin{tabular}{rrr}\
+ $m$ & Average & Standard deviation  \\
+2 &  0,027808 &  0,007532 \\ 
+4 &  0,008059 &  0,000534 \\ 
+8 &  0,003758 &  0,000430 \\ 
+16 &  0,002093 &  0,000087 \\ 
+32 &  0,001587 &  0,000147 \\ 
+64 &  0,001400 &  0,000025 \\ 
+\end{tabular}
+\begin{tablenotes}
+\item[1] N has been fixed to size 128
+\end{tablenotes}
