@@ -1,4 +1,4 @@
-# Exam Report: Applied Algorithms
+# Matrix multiplication experiments
 
 This Project demonstrates my ability to implement, evaluate, and test algorithms, including the application of multicore processing.
 
