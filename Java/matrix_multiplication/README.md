@@ -24,7 +24,7 @@ This project evaluates different matrix multiplication algorithms with a focus o
 
 ### 2.1 Implementation
 
-We use Java for implementing the algorithms. For benchmarking, we use a toolchain updated for Matrix multiplication tasks, leveraging a `TriConsumer<Matrix,Matrix,Integer>` interface. The tests are conducted on a Lenovo ThinkPad X230 running OpenJDK 11.
+We use Java for implementing the algorithms. For benchmarking, we use a toolchain updated for Matrix multiplication tasks. The tests are conducted on a Lenovo ThinkPad X230 running OpenJDK 11.
 
 ### 2.2 Testing
 
@@ -68,7 +68,7 @@ We found that Strassen's algorithm significantly outperformed all other methods.
 
 ---
 
-For code and data files, please refer to the attached supplementary material.
+For code and data files, please refer to the attached supplementary material, also including a more in depth report.
 
 ## Contributions
 Thanks to Lasse, for contributing to this project.
