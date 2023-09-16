@@ -4,7 +4,14 @@ Exploring a data-driven approach for urban bicycle network growth in Copenhagen.
 ![Data-Driven-Bicycle-Networks](readmevideo.gif)
 
 ## About The Project
-This project aims to revolutionize urban bicycle networks in Copenhagen by utilizing a data-driven approach. Combining street layouts, bicycle traffic data, and population density metrics, we create an intelligent system to identify optimal locations for bicycle lane infrastructure. This computationally informed approach aims to deliver networks that are not only extensive but also efficient in terms of user accessibility and traffic flow. By leveraging methodologies from graph theory, optimization algorithms, and data-driven design with utilization of GIS, this project seeks to provide urban planners with actionable insights for developing more sustainable urban transport systems.
+This project aims to synthetically grow urban bicycle networks in Copenhagen by utilizing a data-driven approach. Combining street layouts, bicycle traffic data, and population density metrics, we create an intelligent system to identify optimal locations for bicycle lane infrastructure. This computationally informed approach aims to deliver networks that are not only extensive but also efficient in terms of user accessibility and traffic flow. By leveraging methodologies from graph theory, optimization algorithms, and data-driven design with utilization of GIS, this project seeks to provide urban planners with actionable insights for developing more sustainable urban transport systems.
+
+This project was my MSc Software Design Thesis, also included in this folder. Here is an excerpt from one of network growth stages:
+
+![weighted betweenness centrality](https://github.com/kristofgas/Portfolio/blob/master/Python/data-driven-bicycle-networks/excerpt.png)
+
+
+Excerpt
 
 ## Table of Contents
 1. [Folder Structure](#folder-structure)
