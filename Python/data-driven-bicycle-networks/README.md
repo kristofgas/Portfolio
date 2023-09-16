@@ -11,7 +11,6 @@ This project was my MSc Software Design Thesis, also included in this folder. He
 ![weighted betweenness centrality](https://github.com/kristofgas/Portfolio/blob/master/Python/data-driven-bicycle-networks/excerpt.png)
 
 
-Excerpt
 
 ## Table of Contents
 1. [Folder Structure](#folder-structure)
