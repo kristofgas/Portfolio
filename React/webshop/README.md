@@ -57,7 +57,7 @@ The website starts with a home page featuring a sale banner, a navbar, and a her
 
 ### Endpoints
 
-![Webshop Homepage Screenshot]()
+![Webshop Homepage Screenshot](https://github.com/kristofgas/Portfolio/blob/master/React/webshop/endpoints.png)
 
 <!-- | Resource Path | POST | GET | PUT | DELETE |
 |--------------|------|-----|-----|--------|
