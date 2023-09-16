@@ -62,11 +62,7 @@ Alternatively, run `full_code.ipynb` to execute all steps in one go.
     ```
 * Download as GPX and use QGIS to create a polygon.
 
-## Contributing
-For information about contributing, please see [CONTRIBUTING.md](CONTRIBUTING.md).
 
-## License
-This project is licensed under the MIT License - see [LICENSE.md](LICENSE.md) for details.
 
 ---
 
