@@ -57,6 +57,8 @@ The website starts with a home page featuring a sale banner, a navbar, and a her
 
 ### Endpoints
 
+![Webshop Homepage Screenshot]()
+
 <!-- | Resource Path | POST | GET | PUT | DELETE |
 |--------------|------|-----|-----|--------|
 | /customers | Create a new customer | Retrieve all customers | Error | Error |
