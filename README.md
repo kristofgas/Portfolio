@@ -13,7 +13,7 @@ Hello! 👋 I'm a recently graduated software developer, and this portfolio aims
 3. [React Projects](#react-projects)
     - [Webshop](#webshop)
 4. [REST API](#rest-api)
-    - [Weather API Report](#weather-api-report)
+    - [Weather API](#weather-api-report)
 
 ---
 
