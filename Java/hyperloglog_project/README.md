@@ -1,4 +1,4 @@
-# HyperLogLog Algorithm - Assignment 3 Implementation README
+# HyperLogLog Algorithm Experiments
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -12,7 +12,7 @@
     - [Relation between `m` and Estimation Error](#relation-between-m-and-estimation-error)
 4. [Installation & Setup](#installation-setup)
 5. [How to Run Experiments](#how-to-run-experiments)
-6. [References](#references)
+6. [Contributions](#contributions)
 
 ## Introduction
 This project implements the HyperLogLog algorithm to estimate the number of distinct elements in a data stream. The document was created using Overleaf with LaTeX. The implementation is based on the pseudocode found in the introduction paper and verified through CodeJudge assignments. 
@@ -76,13 +76,9 @@ Experiments revealed that the relationship between `m` and `σ` does not strictl
 
 The results will be automatically saved and can be used to produce the histogram plots in the LaTeX document.
 
-## References
-- The LaTeX document is compiled using Overleaf.
-- The original pseudocode for the HyperLogLog algorithm.
-
-Feel free to reach out if you have any questions or need further clarifications.
 
 ---
-Laurenz Aisenpreis, Kristof Gasior, Lasse Bach Andersen  
-Date: 02-11-2021  
-Version: 1.0.0  
+
+## Contributions
+Thanks to Laurenz and Lasse for contributing to this project
+ 
