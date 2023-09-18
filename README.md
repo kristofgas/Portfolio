@@ -86,6 +86,6 @@ Hello! 👋 I'm a recently graduated software developer, and this portfolio aims
 
 ---
 
-Thank you for taking the time to review my portfolio. Feel free to [contact me](mailto:myemail@example.com) if you have any questions or opportunities!
+Thank you for taking the time to review my portfolio. Feel free to [contact me](mailto:kristofgas@hotmail.com) if you have any questions or opportunities!
 
 [Back to Top ↑](#table-of-contents)
