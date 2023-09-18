@@ -1,4 +1,4 @@
-# Portfolio Summary: README.md
+# Portfolio
 
 Hello! 👋 I'm a recently graduated software developer, and this portfolio aims to showcase a variety of my projects, demonstrating my skills in various programming languages and paradigms. Below you'll find a summarized version of my work. Feel free to click on any project to get a more in-depth understanding!
 
@@ -23,10 +23,8 @@ Hello! 👋 I'm a recently graduated software developer, and this portfolio aims
 - **Objective**: Implement and evaluate the HyperLogLog algorithm used for estimating the cardinality of a set.
 - **Skills**: Java, Algorithms, Probabilistic Data Structures
 - **Features**:  
-    - Implemented hash functions and the `ρ(y)` function.
     - Quality evaluation of the hash function.
     - Adaptable algorithm based on parameter `m`.
-- **Installation**: Requires Java 11.01 and LaTeX.
 
 [Read More](https://github.com/kristofgas/Portfolio/blob/master/Java/hyperloglog/README.md)
 
@@ -36,9 +34,9 @@ Hello! 👋 I'm a recently graduated software developer, and this portfolio aims
 - **Skills**: Java, Algorithms, Multicore processing
 - **Features**:  
     - Algorithms: Elementary, Tiled, Recursive, Strassen's
-    - Testing with JUnit
+    - (Property based) testing with JUnit
     - Benchmarks for different algorithms.
-- **Tech Stack**: Java, OpenJDK 11, JUnit
+
 
 [Read More](https://github.com/kristofgas/Portfolio/blob/master/Java/matrix_multiplication/README.md)
 
@@ -63,12 +61,11 @@ Hello! 👋 I'm a recently graduated software developer, and this portfolio aims
 
 ### [Webshop](/Portfolio/React/webshop)
 - **Objective**: Build an e-commerce platform using React, Node.js, and Express.
-- **Skills**: React, Node.js, Express, JSON, API Development
+- **Skills**: React, Node.js, Express, JSON, CORS, API Development
 - **Features**:  
     - Product browsing by category
     - Detailed product information
     - User registration and login
-- **Tech Stack**: React, Node.js, Express, JSON File Storage
 
 [Read More](https://github.com/kristofgas/Portfolio/blob/master/React/webshop/README.md)
 
