@@ -15,7 +15,7 @@
 6. [Contributions](#contributions)
 
 ## Introduction
-This project involves implementing the HyperLogLog algorithm, a probabilistic data structure used to estimate the number of distinct elements in a data stream. The implementation is verified against the original academic paper and CodeJudge assignments.
+This project involves implementing the HyperLogLog algorithm, a probabilistic data structure used to estimate the number of distinct elements in a data stream. 
 
 ## Implementation Details
 
