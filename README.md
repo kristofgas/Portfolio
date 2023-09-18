@@ -55,7 +55,7 @@ Hello! 👋 I'm a recently graduated software developer, and this portfolio aims
     - MSc Software Design Thesis
 - **Additional Info**: Data files in external storage due to GitHub limitations.
 
-[Read More](/Portfolio/Python/data-driven-bicycle-networks/README.md)
+[Read More](https://github.com/kristofgas/Portfolio/blob/master/Python/data-driven-bicycle-networks/README.md)
 
 ---
 
@@ -70,13 +70,13 @@ Hello! 👋 I'm a recently graduated software developer, and this portfolio aims
     - User registration and login
 - **Tech Stack**: React, Node.js, Express, JSON File Storage
 
-[Read More](/Portfolio/React/webshop/README.md)
+[Read More](https://github.com/kristofgas/Portfolio/blob/master/React/webshop/README.md)
 
 ---
 
 ## REST API
 
-### [Weather API Report](/Portfolio/Rest%20API/wAPI_caching)
+### [Weather API](/Portfolio/Rest%20API/wAPI_caching)
 - **Objective**: Implement a weather data fetching service using Node.js and Express with caching through Redis.
 - **Skills**: Node.js, Express, Redis, API Integration
 - **Features**:  
@@ -85,7 +85,7 @@ Hello! 👋 I'm a recently graduated software developer, and this portfolio aims
     - Error handling and client connection issue documentation
 - **Tech Stack**: Node.js, Express, Redis
 
-[Read More](/Portfolio/Rest%20API/wAPI_caching/README.md)
+[Read More](https://github.com/kristofgas/Portfolio/blob/master/Rest%20API/wAPI_caching/README.md)
 
 ---
 
