@@ -12,7 +12,7 @@ Hello! 👋 I'm a recently graduated software developer, and this portfolio aims
     - [Data-Driven Bicycle Networks](#data-driven-bicycle-networks)
 3. [React Projects](#react-projects)
     - [Webshop](#webshop)
-4. [REST API](#rest-api)
+4. [REST API Projects](#rest-api)
     - [Weather API](#weather-api-report)
 
 ---
@@ -71,7 +71,7 @@ Hello! 👋 I'm a recently graduated software developer, and this portfolio aims
 
 ---
 
-## REST API
+## REST API Projects
 
 ### [Weather API](https://github.com/kristofgas/Portfolio/blob/master/Rest%20API/wAPI_caching)
 - **Objective**: Implement a weather data fetching service using Node.js and Express with caching through Redis.
