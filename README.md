@@ -19,7 +19,7 @@ Hello! 👋 I'm a recently graduated software developer, and this portfolio aims
 
 ## Java Projects
 
-### [HyperLogLog Algorithm Experiments](/Portfolio/Java/hyperloglog)
+### [HyperLogLog Algorithm Experiments](https://github.com/kristofgas/Portfolio/blob/master/Java/hyperloglog)
 - **Objective**: Implement and evaluate the HyperLogLog algorithm used for estimating the cardinality of a set.
 - **Skills**: Java, Algorithms, Probabilistic Data Structures
 - **Features**:  
@@ -29,7 +29,7 @@ Hello! 👋 I'm a recently graduated software developer, and this portfolio aims
 [Read More](https://github.com/kristofgas/Portfolio/blob/master/Java/hyperloglog/README.md)
 
 
-### [Matrix Multiplication Experiments](/Portfolio/Java/matrix_multiplication)
+### [Matrix Multiplication Experiments](https://github.com/kristofgas/Portfolio/blob/master/Java/matrix_multiplication)
 - **Objective**: Evaluate various matrix multiplication algorithms focusing on efficiency.
 - **Skills**: Java, Algorithms, Multicore processing
 - **Features**:  
@@ -44,7 +44,7 @@ Hello! 👋 I'm a recently graduated software developer, and this portfolio aims
 
 ## Python Projects
 
-### [Data-Driven Bicycle Networks](/Portfolio/Python/data-driven-bicycle-networks)
+### [Data-Driven Bicycle Networks](https://github.com/kristofgas/Portfolio/blob/master/Python/data-driven-bicycle-networks)
 - **Objective**: Develop a data-driven approach for urban bicycle network growth in Copenhagen.
 - **Skills**: Python, GIS, Graph Theory, Optimization Algorithms
 - **Features**:  
@@ -59,7 +59,7 @@ Hello! 👋 I'm a recently graduated software developer, and this portfolio aims
 
 ## React Projects
 
-### [Webshop](/Portfolio/React/webshop)
+### [Webshop](https://github.com/kristofgas/Portfolio/blob/master/React/webshop/README.md)
 - **Objective**: Build an e-commerce platform using React, Node.js, and Express.
 - **Skills**: React, Node.js, Express, JSON, CORS, API Development
 - **Features**:  
@@ -73,7 +73,7 @@ Hello! 👋 I'm a recently graduated software developer, and this portfolio aims
 
 ## REST API
 
-### [Weather API](/Portfolio/Rest%20API/wAPI_caching)
+### [Weather API](https://github.com/kristofgas/Portfolio/blob/master/Rest%20API/wAPI_caching/README.md)
 - **Objective**: Implement a weather data fetching service using Node.js and Express with caching through Redis.
 - **Skills**: Node.js, Express, Redis, API Integration
 - **Features**:  
