@@ -61,7 +61,7 @@ Hello! 👋 I'm a recently graduated software developer, and this portfolio aims
 
 ### [Webshop](https://github.com/kristofgas/Portfolio/blob/master/React/webshop/README.md)
 - **Objective**: Build an e-commerce platform using React, Node.js, and Express.
-- **Skills**: React, Node.js, Express, JSON, CORS, API Development
+- **Skills**: React, Node.js, Express, JavaScript, CORS, HTML/CSS, API Development
 - **Features**:  
     - Product browsing by category
     - Detailed product information
@@ -75,7 +75,7 @@ Hello! 👋 I'm a recently graduated software developer, and this portfolio aims
 
 ### [Weather API](https://github.com/kristofgas/Portfolio/blob/master/Rest%20API/wAPI_caching)
 - **Objective**: Implement a weather data fetching service using Node.js and Express with caching through Redis.
-- **Skills**: Node.js, Express, Redis, API Integration
+- **Skills**: Node.js, Express, Redis, JavaDcript, API Integration
 - **Features**:  
     - Rate-limiting mitigation
     - MVC architecture
