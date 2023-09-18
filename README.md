@@ -73,7 +73,7 @@ Hello! 👋 I'm a recently graduated software developer, and this portfolio aims
 
 ## REST API
 
-### [Weather API](https://github.com/kristofgas/Portfolio/blob/master/Rest%20API/wAPI_caching/README.md)
+### [Weather API](https://github.com/kristofgas/Portfolio/blob/master/Rest%20API/wAPI_caching)
 - **Objective**: Implement a weather data fetching service using Node.js and Express with caching through Redis.
 - **Skills**: Node.js, Express, Redis, API Integration
 - **Features**:  
