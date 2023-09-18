@@ -28,7 +28,7 @@ Hello! 👋 I'm a recently graduated software developer, and this portfolio aims
     - Adaptable algorithm based on parameter `m`.
 - **Installation**: Requires Java 11.01 and LaTeX.
 
-[Read More](https://github.com/kristofgas/Portfolio/blob/master/Java/matrix_multiplication/README.md)
+[Read More](https://github.com/kristofgas/Portfolio/blob/master/Java/hyperloglog/README.md)
 
 
 ### [Matrix Multiplication Experiments](/Portfolio/Java/matrix_multiplication)
@@ -40,7 +40,7 @@ Hello! 👋 I'm a recently graduated software developer, and this portfolio aims
     - Benchmarks for different algorithms.
 - **Tech Stack**: Java, OpenJDK 11, JUnit
 
-[Read More](/Portfolio/Java/matrix_multiplication/README.md)
+[Read More](https://github.com/kristofgas/Portfolio/blob/master/Java/matrix_multiplication/README.md)
 
 ---
 
