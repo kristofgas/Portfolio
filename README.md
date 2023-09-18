@@ -28,7 +28,7 @@ Hello! 👋 I'm a recently graduated software developer, and this portfolio aims
     - Adaptable algorithm based on parameter `m`.
 - **Installation**: Requires Java 11.01 and LaTeX.
 
-[Read More](/Portfolio/Java/hyperloglog/README.md)
+[Read More](https://github.com/kristofgas/Portfolio/tree/master/Portfolio/Java/hyperloglog/README.md)
 
 ### [Matrix Multiplication Experiments](/Portfolio/Java/matrix_multiplication)
 - **Objective**: Evaluate various matrix multiplication algorithms focusing on efficiency.
