@@ -1,57 +1,52 @@
+// /utils/weatherUtils.js
+
 const axios = require('axios');
-const { client, isClientReady } = require('../redisClient');
+const { client } = require('../redisClient');
+const config = require('../config');
+const logger = require('./logger'); // Import the logger
 
-// Function to get value from Redis by key
-const getAsync = (key) => {
-  return new Promise((resolve, reject) => {
-    if (client.connected && isClientReady) {
-      client.get(key, (err, data) => {
-        if (err) reject(err);
-        resolve(data);
-      });
-    } else {
-      console.error('Error in getAsync: Redis client is not connected');
-      reject(new Error("Redis client is not connected"));
-    }
-  });
+const getAsync = async (key) => {
+  const data = await client.get(key);
+  return data;
 };
 
-// Function to set value in Redis by key
-const setAsync = async (key, expiration, value) => {
-  return new Promise((resolve, reject) => {
-    if (client.connected && isClientReady) {
-      client.setex(key, expiration, value, (err) => {
-        if (err) reject(err);
-        resolve();
-      });
-    } else {
-      console.error('Error in setAsync: Redis client is not connected');
-      reject(new Error("Redis client is not connected"));
-    }
-  });
+const incrementApiCounter = async () => {
+  await client.incr('api_counter');
 };
 
-// Function to fetch weather data
-const fetchWeatherData = async (cityId, unit, apiKey) => {
+const checkApiLimit = async () => {
+  const counter = await client.get('api_counter');
+  if (counter >= 10000) {
+    throw new Error('API limit reached');
+  }
+};
+
+const fetchWeatherData = async (cityId, unit) => {
   try {
+    await checkApiLimit(); // Check the API limit before making a request
+
     const redisKey = `${cityId}-${unit}`;
     const cachedData = await getAsync(redisKey);
 
     if (cachedData) {
+      logger.info(`Cache hit for city ID ${cityId} with unit ${unit}.`); // Log cache hit
       return JSON.parse(cachedData);
     }
 
-    const response = await axios.get(
-      `https://api.openweathermap.org/data/2.5/forecast?id=${cityId}&units=${unit}&appid=${apiKey}`
-    );
+    const url = `${config.baseWeatherUrl}?id=${cityId}&units=${unit}&appid=${config.openWeatherApiKey}`;
+    const response = await axios.get(url);
+    // 10800 is used, as data seems to be updated every 3 hours in the openWeatherApi
+    await client.set(redisKey, JSON.stringify(response.data), 'EX', 3600);
+    await incrementApiCounter(); // Increment the counter after a successful API call
 
-    await setAsync(redisKey, 3600, JSON.stringify(response.data));
+    logger.info(`Fetched and cached weather data for city ID ${cityId} with unit ${unit}.`); // Log successful fetch and caching
     return response.data;
-
   } catch (error) {
-    console.error('Error in fetchWeatherData:', error);
+    logger.error(`Error fetching weather data for city ID ${cityId}: ${error.message}`); // Log error
     throw error;
   }
 };
 
-module.exports = { fetchWeatherData };
+module.exports = {
+  fetchWeatherData,
+};

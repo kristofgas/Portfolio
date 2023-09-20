@@ -2,7 +2,9 @@
 GET http://localhost:3000/weather/cities/2618425 HTTP/1.1
 
 
-
-//GET http://localhost:3000/weather/summary?unit=celsius&temperature=24&cities=2618425,3621849,3133880 HTTP/1.1
+//Probably not returning Tronheim right now as it is not over 24
+GET http://localhost:3000/weather/summary?unit=celsius&temperature=24&cities=2618425,3621849,3133880 HTTP/1.1
 ###
 
+// Probably returning all cities as it is warmer that 5 celcius
+GET http://localhost:3000/weather/summary?unit=celsius&temperature=5&cities=2618425,3621849,3133880 HTTP/1.1

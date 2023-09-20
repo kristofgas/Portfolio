@@ -1,0 +1,28 @@
+{"level":"error","message":"Error fetching weather data for city ID 268425: Request failed with status code 404","timestamp":"2023-09-20 12:14:57"}
+{"level":"error","message":"Error in getCityWeather: AxiosError: Request failed with status code 404","timestamp":"2023-09-20 12:14:57"}
+{"level":"error","message":"Error fetching weather data for city ID 268425: Request failed with status code 404","timestamp":"2023-09-20 12:15:46"}
+{"level":"error","message":"Error in getCityWeather: AxiosError: Request failed with status code 404","timestamp":"2023-09-20 12:15:46"}
+{"level":"error","message":"Error in getWeatherSummary: Error: Failed to fetch data","timestamp":"2023-09-20 15:01:12"}
+{"level":"error","message":"Error in getWeatherSummary: Error: Failed to fetch data","timestamp":"2023-09-20 15:04:55"}
+{"level":"error","message":"Error fetching weather data for city ID 2618425: Redis client is not ready","timestamp":"2023-09-20 15:21:28"}
+{"level":"error","message":"Error in getCityWeather: Error: Redis client is not ready","timestamp":"2023-09-20 15:21:28"}
+{"level":"error","message":"Error fetching weather data for city ID 2618425: Redis client is not ready","timestamp":"2023-09-20 15:22:47"}
+{"level":"error","message":"Error in getCityWeather: Error: Redis client is not ready","timestamp":"2023-09-20 15:22:47"}
+{"level":"error","message":"Error fetching weather data for city ID 2618425: Redis client is not ready","timestamp":"2023-09-20 15:22:55"}
+{"level":"error","message":"Error fetching weather data for city ID 3621849: Redis client is not ready","timestamp":"2023-09-20 15:22:55"}
+{"level":"error","message":"Error fetching weather data for city ID 3133880: Redis client is not ready","timestamp":"2023-09-20 15:22:55"}
+{"level":"error","message":"Error in getWeatherSummary: Error: Redis client is not ready","timestamp":"2023-09-20 15:22:55"}
+{"level":"error","message":"Error in getWeatherSummary: Error: Failed to fetch data","timestamp":"2023-09-20 15:27:24"}
+{"level":"error","message":"Error in getWeatherSummary: Error: Failed to fetch data","timestamp":"2023-09-20 15:30:22"}
+{"level":"error","message":"Error in getWeatherSummary: Error: Failed to fetch data","timestamp":"2023-09-20 15:41:04"}
+{"level":"error","message":"Error in getWeatherSummary: Error: Failed to fetch data","timestamp":"2023-09-20 16:00:26"}
+{"level":"error","message":"Error in getWeatherSummary: Error: Failed to fetch data","timestamp":"2023-09-20 16:00:48"}
+{"level":"error","message":"Error in getWeatherSummary: Error: Failed to fetch data","timestamp":"2023-09-20 16:24:30"}
+{"level":"error","message":"Error in getWeatherSummary: Error: Failed to fetch data","timestamp":"2023-09-20 16:37:16"}
+{"level":"error","message":"Error in getWeatherSummary: Error: Failed to fetch data","timestamp":"2023-09-20 16:40:39"}
+{"level":"error","message":"Error in getWeatherSummary: Error: Failed to fetch data","timestamp":"2023-09-20 17:00:51"}
+{"level":"error","message":"Error in getWeatherSummary: Error: Failed to fetch data","timestamp":"2023-09-20 17:09:54"}
+{"level":"error","message":"Error in getWeatherSummary: Error: Failed to fetch data","timestamp":"2023-09-20 17:10:57"}
+{"level":"error","message":"Error in getWeatherSummary: Error: Failed to fetch data","timestamp":"2023-09-20 17:12:00"}
+{"level":"error","message":"Error in getWeatherSummary: Error: Failed to fetch data","timestamp":"2023-09-20 17:14:05"}
+{"level":"error","message":"Error in getWeatherSummary: Error: Failed to fetch data","timestamp":"2023-09-20 17:15:46"}
