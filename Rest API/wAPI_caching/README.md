@@ -1,192 +1,55 @@
-# Weather API
+# Integration Layer for Weather Application
 
+## Introduction
+The purpose of this report is to provide a comprehensive analysis of an integration layer designed and built to mediate requests between a mobile application and the OpenWeatherMap API. This application aims to address the challenges posed by rate limits set by the third-party API, which can be a bottleneck, especially when the client app gains popularity. We'll dissect the architectural choices, understand the flow of the code, and evaluate the design decisions made during the development process.
 
+## Architectural Overview
 
-## Introduction 
+The application follows a standard Express-based architecture. The organization adheres to best practices by segregating functionalities into folders and files based on their specific responsibilities:
 
-  
+- **/__tests__**: Contains unit tests.
+- **/controllers**: Handles incoming HTTP requests and sends appropriate responses.
+- **/routes**: Manages routing of the application.
+- **/utils**: A collection of utility functions, including weather data fetching and logging.
+- **app.js**: Initializes and bootstraps the application.
+- **config.js**: Manages configurations.
+- **redisClient.js**: Manages the connection to the Redis server.
+- **.env**: Keeps environment-specific configurations.
 
-The code implements a simple Node.js application using the Express framework to fetch weather information. The application uses Redis as an in-memory cache and integrates with the OpenWeatherMap API to provide real-time weather data. The purpose of this report is to provide an in-depth explanation of the code, its design decisions, and to address a critical issue related to Redis client connection errors, which is yet to be fixed. 
-  
+## Code Explanation
 
-## Architecture Overview 
+1. **app.js**: The heart of the application, `app.js` is where the server is initiated. It starts by importing necessary dependencies, sets up middleware to handle JSON inputs, routes through `/weather`, and provides an error handling middleware. The `bootstrapApp()` function ensures that the Redis client is ready before starting the server. Only if not in a test environment, the server is bootstrapped.
 
- The application serves as an integration layer between a mobile app and a third-party weather API, OpenWeatherMap. It is designed to address the rate-limiting concerns while serving a large number of users. This architecture is modular, leveraging the MVC pattern, and can be extended to meet future requirements. 
+2. **weatherRoutes.js**: This file defines two routes for weather data retrieval - `/summary` and `/cities/:city_id`. Each route points to its respective controller function.
 
- 
+3. **weatherController.js**: This file has two main functions:
+   - `getWeatherSummary()`: Fetches weather data for multiple cities and filters the data to return only cities where the temperature exceeds a specified value.
+   - `getCityWeather()`: Retrieves the weather data for a single city for the next five days.
 
-1. **Express Server (`app.js`)**: This is the entry point of the application that sets up the HTTP server and middleware. 
+4. **weatherUtils.js**: This utility file manages interactions with the OpenWeatherMap API. The core function, `fetchWeatherData()`, first checks if the request exceeds the API rate limit, then attempts to retrieve cached data from Redis, and if not available, fetches data from the API, caches it in Redis, and increments an API counter.  
 
-2. **Routes (`weatherRoutes.js`)**: Express Router is used to manage the application's routes. 
+5. **redisClient.js**: This module initializes the Redis client, manages connection events (like connect, ready, and error), and provides a utility function to wait until the Redis client is ready.
 
-3. **Controller (`weatherController.js`)**: Houses the business logic of the application. 
+6. **.env**: Holds environment-specific configurations, specifically the API key for OpenWeatherMap.
 
-4. **Utilities (`weatherUtils.js`)**: Utility functions for fetching weather data and handling Redis operations. 
+7. **logger.js**: Provides a consistent logging mechanism using the `winston` library. It separates logs into error logs and combined logs and provides a colorized console output for non-production environments.
 
-5. **Redis Client (`redisClient.js`)**: Manages the Redis client and its connection status. 
+8. **allTests.js**: Contains the tests for the application. It mocks certain functions to avoid actual HTTP requests or Redis interactions. Before all tests, it ensures the Redis client is ready and starts the Express server on a different port. After all tests, it closes the server and Redis connection.
 
-6. **Configuration (`config.js`)**: Stores the API keys and other configurations. 
+## Design Decisions
 
-  
+1. **Integration Layer**: Instead of direct API calls from the mobile app to OpenWeatherMap, an integration layer is introduced, offering a buffer and a caching mechanism to ensure rate limits aren't exceeded.
 
- 
+2. **Redis for Caching**: Redis is used to cache weather data. This reduces the number of calls made to OpenWeatherMap and ensures faster response times for frequently requested data.
 
-Though not an exact match, the architecture can be discussed in terms of the MVC design pattern, with specific adaptations made for a RESTful API service. 
+3. **API Rate Limiting**: An `api_counter` in Redis tracks the number of API calls made to OpenWeatherMap. Before any request, the counter is checked to ensure it doesn't exceed the defined limit.
 
-  
+4. **Modularity and Clean Code**: The codebase follows a modular approach, promoting separation of concerns. This ensures that any expansion or modification in the future remains seamless.
 
-#### Model 
+5. **Error Handling**: Both client-side and server-side errors are efficiently handled. They're also logged to provide insights into any issues the application might encounter.
 
-  
+6. **Testing**: The app's testability is considered in its design. By mocking certain functions in tests, it ensures that unit tests don't make actual API calls or alter the database.
 
-In the context of a REST API, especially one serving as a middle layer, the "Model" can be thought of as the portion of the system that manages data and business rules. Although this application does not have a designated model layer, the `weatherUtils.js` can be seen as fulfilling this role. 
+## Conclusion
 
-  
-
-1. **Data Caching**: The utility functions in `weatherUtils.js` are responsible for caching data in Redis. This helps to alleviate the rate-limiting issue from the third-party API. 
-
-   
-
-2. **Data Retrieval**: Functions like `fetchWeatherData` either pull fresh data from the OpenWeatherMap API or return cached data from Redis, thus functioning as a kind of data model. 
-
-  
-
-3. **Data Transformation**: When data is fetched, it is transformed into a format that can be used to serve API endpoints, another task often associated with the model. 
-
-  
-
-#### View 
-
-  
-
-A REST API doesn't have a "View" in the traditional MVC sense, as it is not responsible for rendering user interfaces. However, in the API context, the closest analogy to a "View" would be the formatted JSON responses returned to the client.  
-
-  
-
-1. **JSON Formatting**: The JSON structure makes it easy for client applications to consume the API.  
-
-  
-
-2. **Data Presentation**: Even though there is no visual presentation, the structure of the JSON response is crucial as it determines how easy it is for client apps to parse and use the data. 
-
-  
-
-#### Controller 
-
-  
-
-The `weatherController.js` file serves as the Controller and is responsible for the application's business logic and data flow. 
-
-  
-
-1. **Input Validation**: Before processing, the controller validates user input such as unit, temperature, and cities. 
-
-   
-
-2. **Data Processing**: It uses utility functions from `weatherUtils.js` (the model) to fetch necessary data. It processes this data to fit the business requirements, e.g., filtering out cities based on temperature. 
-
-  
-
-3. **Error Handling**: The controller also deals with any errors that might occur during data fetching or processing and returns appropriate HTTP status codes and messages. 
-
-  
-
-#### Error Handling and Bootstrapping 
-
-  
-
-One of the issues I've encountered is with the Redis client disconnecting when an HTTP request is made, causing an 'Error: Redis client is not connected' error. 
-
-  
-
-1. **Redis Initialization**: The `redisClient.js` and the `bootstrapApp` function in `app.js` are designed to ensure that the Redis client is ready before the application starts accepting HTTP requests.  
-
-  
-
-2. **Error Handling in Utility Functions**: In `weatherUtils.js`, there are checks in place to see if the Redis client is connected before attempting to get or set data. 
-
- 
-
- 
-
- 
-
-## Detailed Code Explanation 
-
-  
-
-### Error Handling 
-
-  
-
-The middleware in `app.js` handles errors that occur during the processing of incoming HTTP requests. If any error occurs, a `500 Internal Server Error` is returned, and the error stack is logged to the console: 
-
-  
-
-```javascript 
-
-app.use((err, req, res, next) => { 
-
-  console.error(err.stack); 
-
-  res.status(500).send('Something broke!'); 
-
-}); 
-
-``` 
-
-  
-
-### Bootstrapping 
-
-  
-
-Bootstrapping is done in the `app.js` file with the function `bootstrapApp()`. This function performs initial setup tasks like waiting for the Redis client to be ready before starting the HTTP server. The function `waitForClientToBeReady()` in `redisClient.js` is used to ensure that the Redis client is connected and ready before proceeding. 
-
-  
-
-```javascript 
-
-async function bootstrapApp() { 
-
-  await waitForClientToBeReady(); 
-
-  app.listen(port, () => { 
-
-    console.log(`Server is running on port ${port}`); 
-
-  }); 
-
-} 
-
-``` 
-
-  
-
-### Redis Connection Issue 
-
-  
-
-The error message "Redis client is not connected" suggests that there's an issue with the Redis client's connection status when trying to get or set data in Redis. This is specifically happening in the utility functions `getAsync()` and `setAsync()` in `weatherUtils.js`. 
-
-  
-
-#### Attempts to Fix the Error 
-
-  
-
-1. **Connection Checks**: Implemented a variable `isClientReady` in `redisClient.js` to keep track of the Redis client’s connection status. Only proceed to use `get` or `set` if `isClientReady` is `true`. 
-
-2. **Retry Mechanism**: A function `waitForClientToBeReady()` has been implemented, which waits until the Redis client is ready before starting the server. 
-
-  
-
-## Design Decisions 
-
-  
-
-1. **Modular Code**: The code is broken down into specific modules like routes, controllers, and utilities for better maintainability. 
-
-2. **Environment Variables**: Used environment variables for storing sensitive information like API keys. 
-
-3. **Caching**: Integrated Redis for caching weather data to reduce the number of calls to the OpenWeather API, thereby improving performance. 
+In this report, we analyzed the integration layer developed as a solution for the backend technical take-home challenge provided by Shape. The solution effectively buffers and manages requests to the OpenWeatherMap API, ensuring the rate limit isn't exceeded while also providing fast response times through caching. The modular and scalable code structure promises easy maintenance and potential expansion in the future.
